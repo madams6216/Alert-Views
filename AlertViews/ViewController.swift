@@ -9,6 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    @IBAction func simpleAlert(sender: AnyObject) {
+       
+        let simpleAlert = UIAlertController(title: "Simple Alert", message: " This is an example of Simple Alert", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        
+        simpleAlert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+        
+        
+        self.presentViewController(simpleAlert, animated: true, completion: nil)
+        
+    }
+    
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
